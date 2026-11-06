@@ -1,0 +1,133 @@
+{
+  "contractName": "SignatureRegistry",
+  "abi": [
+    {
+      "inputs": [],
+      "name": "AlreadyVerified",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "InvalidMessageHash",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "NotVerified",
+      "type": "error"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "wallet",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "internalType": "bytes32",
+          "name": "messageHash",
+          "type": "bytes32"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "timestamp",
+          "type": "uint256"
+        }
+      ],
+      "name": "VerificationRegistered",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "wallet",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "timestamp",
+          "type": "uint256"
+        }
+      ],
+      "name": "VerificationRevoked",
+      "type": "event"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "wallet",
+          "type": "address"
+        }
+      ],
+      "name": "getVerification",
+      "outputs": [
+        {
+          "internalType": "bytes32",
+          "name": "messageHash",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "uint256",
+          "name": "timestamp",
+          "type": "uint256"
+        },
+        {
+          "internalType": "bool",
+          "name": "isActive",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "wallet",
+          "type": "address"
+        }
+      ],
+      "name": "isVerified",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "messageHash",
+          "type": "bytes32"
+        }
+      ],
+      "name": "registerVerification",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "revokeVerification",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x608060405234801561000f575f80fd5b506102ab8061001d5f395ff3fe608060405234801561000f575f80fd5b506004361061004a575f3560e01c80635ddf2a4b1461004e5780637fc9592d14610063578063b9209e33146100c0578063c33dc916146100fe575b5f80fd5b61006161005c366004610231565b610106565b005b61009e610071366004610248565b6001600160a01b03165f90815260208190526040902080546001820154600290920154909260ff90911690565b6040805193845260208401929092521515908201526060015b60405180910390f35b6100ee6100ce366004610248565b6001600160a01b03165f9081526020819052604090206002015460ff1690565b60405190151581526020016100b7565b6100616101ba565b8061012457604051638b56642d60e01b815260040160405180910390fd5b335f908152602081905260409020600281015460ff1680156101465750805482145b1561016457604051630231faf760e31b815260040160405180910390fd5b81815542600180830182905560028301805460ff19169091179055604051908152829033907fbe2b4c51410d340ed580aa6489a9a3d6ee6cc81c55d816e710d216f174bc7a149060200160405180910390a35050565b335f908152602081905260409020600281015460ff166101ed5760405163a95362b560e01b815260040160405180910390fd5b60028101805460ff1916905560405142815233907fdcd4c046570f128a6a0d5964b3b87fa9c505d9e9528cd9aecb389cf7d77a7ade9060200160405180910390a250565b5f60208284031215610241575f80fd5b5035919050565b5f60208284031215610258575f80fd5b81356001600160a01b038116811461026e575f80fd5b939250505056fea2646970667358221220e78f0fe5aec37d42a8c6d40c20959903042995eb6f779e823f4c0840bd076a9464736f6c63430008140033"
+}

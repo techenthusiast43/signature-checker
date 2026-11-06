@@ -1,0 +1,9 @@
+{
+  "address": "0x5FbDB2315678afecb367f032d93F642f64180aa3",
+  "testnetRegistryAddress": "0x5FbDB2315678afecb367f032d93F642f64180aa3",
+  "mainnetRegistryAddress": "0x5FbDB2315678afecb367f032d93F642f64180aa3",
+  "chainId": 968,
+  "networkName": "BOT Chain Testnet (Bohr)",
+  "explorerUrl": "https://scan.bohr.life"
+}
+
