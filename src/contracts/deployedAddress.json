@@ -1,9 +1,8 @@
 {
-  "address": "0x5FbDB2315678afecb367f032d93F642f64180aa3",
-  "testnetRegistryAddress": "0x5FbDB2315678afecb367f032d93F642f64180aa3",
-  "mainnetRegistryAddress": "0x5FbDB2315678afecb367f032d93F642f64180aa3",
+  "address": "0x626ff1c9e199ea9ebcfab47e0dd31ca5332bb2ec",
   "chainId": 968,
   "networkName": "BOT Chain Testnet (Bohr)",
-  "explorerUrl": "https://scan.bohr.life"
+  "deployedAt": "2026-11-06T15:35:18.748Z",
+  "transactionHash": "0xf08a30afc38113733f73415af7ae96f350818db4dad36d0dda20cf1761869ba6",
+  "explorerUrl": "https://scan.bohr.life/address/0x626ff1c9e199ea9ebcfab47e0dd31ca5332bb2ec"
 }
-
